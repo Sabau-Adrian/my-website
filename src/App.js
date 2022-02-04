@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload with GitHub Actions!
         </p>
+        <p>Aceasta va fii pagina mea. Am reusit draga!  Kiss!</p>
         <a
           className="App-link"
           href="https://reactjs.org"
