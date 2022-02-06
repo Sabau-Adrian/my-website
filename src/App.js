@@ -101,6 +101,7 @@ function App() {
                 color="primary"
                 >
               <Button
+                variant="text"
                 startIcon={<SaveIcon />}
                 color="primary">
                   Save
@@ -111,6 +112,7 @@ function App() {
                   Discard
               </Button>
             </ButtonGroup>
+            <button>Click</button>
             <img src={logo} className="App-logo" alt="logo" />
           </header>
         </div>

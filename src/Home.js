@@ -41,7 +41,8 @@ const Home = () => {
                 </Box>
                 <Typical  
                 steps={['Hello!', 1000,
-                        'Front-End Developer 💻', 1000
+                        'Front-End Developer 💻', 1000,
+                        'Kiss you Roxen 😘', 1000
                     ]}
                 loop={Infinity}
                 wrapper="p"/>
