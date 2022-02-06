@@ -4,7 +4,7 @@ import './App.css';
 import Button from '@mui/material/Button';
 import SaveIcon from "@mui/icons-material/Save";
 import DeleteIcon from "@mui/icons-material/Delete";
-import { AppBar, ButtonGroup, Container, FormControlLabel, Grid, IconButton, Paper, Toolbar, Typography } from '@mui/material';
+import {  ButtonGroup, Container, FormControlLabel, Grid, Paper, Typography } from '@mui/material';
 import { Checkbox } from '@mui/material';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import AcUnitIconOutlined from '@mui/icons-material/AcUnit';
@@ -13,7 +13,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { green, purple } from '@mui/material/colors';
 import 'fontsource-roboto';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import Header from './Header.js';
+import Home from './Home.js';
 
 
 
@@ -65,19 +66,8 @@ function App() {
       <Container>
         <div className="App">
           <header className="App-header">
-            <AppBar>
-              <Toolbar>
-                <IconButton>
-                  <MenuIcon />  
-                </IconButton>
-                <Typography variant="h6"> 
-                  MUI AppBar
-                </Typography>
-                <Button color="secondary"> 
-                  LOGIN
-                </Button>
-              </Toolbar>
-            </AppBar>
+            <Header />
+            <Home />
             <Typography variant="h1" component="div" >
               Welcome to MUI!
             </Typography>
