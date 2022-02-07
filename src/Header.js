@@ -10,7 +10,7 @@ const theme = createTheme({
       button: {
         fontSize: '0.75rem',
         fontWeight: 'bold',
-        fontColor: '#EEEEEE',
+        fontColor: '#F1D00A',
         '@media (min-width:600px)': {
             fontSize: '1.25rem',
             fontWeight: 'bold',
@@ -19,7 +19,7 @@ const theme = createTheme({
     },
     palette: {
       primary: {
-        main: "#00ADB5",
+        main: "#F0F0F0",
       },
       secondary: {
         main: green[500],
@@ -31,14 +31,12 @@ const Header = () => {
         <ThemeProvider theme={theme}>
             <Grid container spacing={2}>
                 <AppBar
-                    style={{ backgroundColor: '#393E46' }}>
+                    style={{ backgroundColor: '#21325E' }}>
 
                     <Toolbar>
 
                         <Grid item xs={3} md={2} lg={2}>
                             <Button
-                                
-                                
                                 color="primary">
                                 Home
                             </Button>

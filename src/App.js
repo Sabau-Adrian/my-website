@@ -63,59 +63,10 @@ function CheckBoxExample() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
-        <div className="App">
-          <header className="App-header">
+      <Container disableGutters maxWidth={false}>
             <Header />
             <Home />
-            <Typography variant="h1" component="div" >
-              Welcome to MUI!
-            </Typography>
-            <Typography variant='subtitle1'>
-              Leard how to use MUI!
-            </Typography>
-            <StyledButton>This button is styled!</StyledButton>
-            <Grid container spacing={4} justifyContent="center">
-              <Grid item xs={3} sm={6}>
-                <Paper style={{ height:75, width:'100%'}} />
-              </Grid>
-              <Grid item xs={3} sm={6}>
-                <Paper style={{ height:75, width:'100%'}} />
-              </Grid>
-              <Grid item xs={3} lg={12}>
-                <Paper style={{ height:75, width:'100%'}} />
-              </Grid>
-              <Grid item xs={3} sm={12} md={6}>
-                <Paper style={{ height:75, width:'100%'}} />
-              </Grid>
-              <Grid item xs={3} sm={12} md={6}>
-                <Paper style={{ height:75, width:'100%'}} />
-              </Grid>
-            </Grid>
-            <CheckBoxExample />
-            <ButtonGroup style={{
-                fontSize:40 
-                }}
-                size="large"
-                href="#" variant="contained" 
-                color="primary"
-                >
-              <Button
-                variant="text"
-                startIcon={<SaveIcon />}
-                color="primary">
-                  Save
-              </Button>
-              <Button
-                startIcon={<DeleteIcon />}
-                color="secondary">
-                  Discard
-              </Button>
-            </ButtonGroup>
-            <button>Click</button>
-            <img src={logo} className="App-logo" alt="logo" />
-          </header>
-        </div>
+            
       </Container>
     </ThemeProvider>
   );
