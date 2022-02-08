@@ -7,6 +7,7 @@ import { green, purple } from '@mui/material/colors';
 import 'fontsource-roboto';
 import Header from './Header.js';
 import Home from './Home.js';
+import About from './About.js'
 
 
 
@@ -42,7 +43,7 @@ function App() {
       <Container disableGutters maxWidth={false}>
             <Header />
             <Home />
-            
+            <About />
       </Container>
     </ThemeProvider>
   );
