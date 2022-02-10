@@ -8,6 +8,7 @@ import Typical from 'react-typical';
 import profileImg from '../src/images/Linkedin.png';
 import './Home.css';
 import { ThemeProvider, createTheme,} from '@mui/material/styles';
+import 'animate.css'
 
 
 const theme = createTheme({
@@ -72,7 +73,7 @@ const Home = () => {
                                 variant='h3'>
                                 Hello, I'm
                             </Typography>
-                            <Typography variant='h3' pl='15px' color="#F1D00A">Adrian</Typography>
+                            <Typography animate__animated animate__backInDown variant='h3' pl='15px' color="#F1D00A">Adrian</Typography>
                         </Box>
                         <p>
                             I'm a {' '}<Typical

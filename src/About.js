@@ -1,17 +1,39 @@
 import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
 import Timeline from '@mui/lab/Timeline';
-import { borderRadius, Box } from '@mui/system';
-import React from 'react';
-import { Collapse, Container, Typography } from '@mui/material';
+import { Box } from '@mui/system';
+import React, {useState } from 'react';
+import {  Container, Typography } from '@mui/material';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import './About.css';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
+const theme = createTheme();
+theme.typography.h6 = {
+  fontSize: '0.5rem',
+  
+  '@media (min-width:600px)': {
+    fontSize: '1.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+};
+
+theme.typography.h5 = {
+  fontSize: '0.6rem',
+  fontWeight: 'bold',
+  textAlign: 'center',
+  
+  '@media (min-width:600px)': {
+    fontSize: '1.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+};
 const style = {
     width: '100%',
     maxWidth: 360,
@@ -29,32 +51,28 @@ const listItem = {
         }
 }
 function About() {
+  const [count, setCount] = useState(4)
+
+  function hideElement() {
+    
+  }
+
+  function decrementCount() {
+    setCount(prevCount => prevCount -1)
+  }
+  function incrementCount() {
+    setCount(prevCount => prevCount +1)
+  }
+  
     return(
+      <ThemeProvider theme={theme}> 
         <Container disableGutters maxWidth={false}
         sx={{
             display:'flex',
-            flexDirection: 'row',
+            flexDirection: 'column',
             justifyContent: 'center'
         }}>
-        <Box>
-            <Collapse>Hi</Collapse>
-        <List sx={style} component="nav" aria-label="mailbox folders">      
-      <ListItem sx={listItem} button>
-        <ListItemText primary="Education"/>
-      </ListItem>
-      <Divider />
-      <ListItem  sx={listItem} button divider>
-        <ListItemText primary="Interests" />
-      </ListItem>
-      <ListItem  sx={listItem} button>
-        <ListItemText primary="Programming Skills" />
-      </ListItem>
-      <Divider light />
-      <ListItem  sx={listItem}button>
-        <ListItemText primary="Projects" />
-      </ListItem>
-    </List>  
-        </Box>    
+         <Typography variant="h2">Work History</Typography> 
         <Box>
         <Timeline position="alternate">
         <TimelineItem>
@@ -64,20 +82,22 @@ function About() {
             variant="body2"
             color="text.secondary"
           >
-            9:30 am
+            2014-2017
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
-            <TimelineDot>
+            <TimelineDot color="secondary">
               <FastfoodIcon />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
-              Eat
+            <Typography variant="h5" component="span">
+              Waiter/Bartender at Motel Gilau
             </Typography>
-            <Typography>Because you need strength</Typography>
+            <Typography variant="h6">Customer Service</Typography>
+            <Typography variant="h6">Teamwork</Typography>
+            <Typography variant="h6">Effective communication</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -86,56 +106,81 @@ function About() {
             variant="body2"
             color="text.secondary"
           >
-            10:00 am
+            2017-2019
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
+            <TimelineDot color="primary">
+              <TrendingUpIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: '12px', px: 2 }}>
+            <Typography variant="h5" component="span">
+            E commerce product manager at EuroArtDeco
+            </Typography>
+            <Typography variant="h6">Photo shooting/editing (PhotoShop)</Typography>
+            <Typography variant="h6">Customer service</Typography>
+            <Typography variant="h6">Problem-solving</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+        <TimelineOppositeContent
+            sx={{ m: 'auto 0' }}
+            align="right"
+            variant="body2"
+            color="text.secondary"
+          >
+            2019-2020
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="secondary" variant="filled">
+              <BusinessCenterIcon />
+            </TimelineDot>
+            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: '12px', px: 2 }}>
+            <Typography variant="h5" component="span">
+              Salesperson at RMC Suport Motors
+            </Typography>
+            <Typography variant="h6">Time management</Typography>
+            <Typography variant="h6">Client Engagement</Typography>
+            <Typography variant="h6">Active Listening</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+        <TimelineOppositeContent
+            sx={{ m: 'auto 0' }}
+            align="right"
+            variant="body2"
+            color="text.secondary"
+          >
+            2021-2022
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
             <TimelineDot color="primary">
               <LaptopMacIcon />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
-              Code
+            <Typography variant="h5" component="span">
+              Web Developer at Scoala Informala (course)
             </Typography>
-            <Typography>Because it&apos;s awesome!</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary" variant="outlined">
-              <HotelIcon />
-            </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
-              Sleep
-            </Typography>
-            <Typography>Because you need rest</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-            <TimelineDot color="secondary">
-              <RepeatIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
-              Repeat
-            </Typography>
-            <Typography>Because this is the life you love!</Typography>
+            <Typography variant="h6">Programming laguages:JavaScript</Typography>
+            <Typography variant="h6">Libraries/Framework:React.js,Node.js</Typography>
+            <Typography variant="h6">HTML/CSS</Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
       </Box>
       </Container>
+      </ThemeProvider>
     );
 }
+ 
+
 
 export default About;
