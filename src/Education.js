@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { Box} from "@mui/system";
 import React from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -61,6 +61,8 @@ theme.typography.h6 = {
 function Education() {
     return(
         <ThemeProvider theme={theme}>
+            <Container disableGutters maxWidth={false}>
+            
             <Box  sx={{
                 display:'flex',
                 flexDirection:'column',
@@ -89,6 +91,7 @@ function Education() {
                 <Typography variant="h5">Front-End Developer</Typography>
             </Box>
             </Box>
+            </Container>
         </ThemeProvider>
         
     );

@@ -12,6 +12,8 @@ import SchoolIcon from '@mui/icons-material/School';
 import { Container } from '@mui/material';
 import HistoryIcon from '@mui/icons-material/History';
 import InterestsIcon from '@mui/icons-material/Interests';
+import ProgrammingSkills from './ProgrammingSkills';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 
 
 
@@ -27,7 +29,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -62,26 +64,30 @@ export default function HorizontalTabs() {
   return (
     <Container disableGutters maxWidth={false}>
     <Box sx={{ width: '100%',
-    height:'100vh'}}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+    height:'100vh',
+    padding:'0px'}}>
+      <Box sx={{ padding:'0px', borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab icon={<HistoryIcon/>} label="Work history" {...a11yProps(0)} />
           <Tab icon={<SchoolIcon/>} label="Education" {...a11yProps(1)} />
           <Tab icon={<InterestsIcon/>} label="Interests" {...a11yProps(2)} />
+          <Tab icon={<LaptopMacIcon />} label="Programming Skills" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}>
-        <TabPanel value={value} index={0} dir={theme.direction}>
+        <TabPanel sx={{padding:'0px'}} value={value} index={0} dir={theme.direction}>
           <WorkTimeLine />
         </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
+        <TabPanel sx={{padding:'0px'}} value={value} index={1} dir={theme.direction}>
           <Education />
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+        <TabPanel  sx={{padding:'0px'}} value={value} index={2} dir={theme.direction}>
+        </TabPanel>
+        <TabPanel>
+          <ProgrammingSkills />
         </TabPanel>
       </SwipeableViews>
     </Box>

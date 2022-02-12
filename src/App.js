@@ -42,7 +42,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container disableGutters maxWidth={false}>
             <Header />
+            
             <Home />
+            
             <HorizontalTabs />
       </Container>
     </ThemeProvider>

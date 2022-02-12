@@ -1,8 +1,7 @@
 import React from "react";
-import { AppBar, Toolbar, IconButton, Typography, Button, ButtonGroup, Grid, } from "@mui/material";
-import styled from "styled-components";
+import { AppBar, Toolbar, Button, Grid, } from "@mui/material";
 import { ThemeProvider, createTheme} from '@mui/material/styles';
-import { purple, green,} from "@mui/material/colors";
+import { green,} from "@mui/material/colors";
 
 
 const theme = createTheme({
