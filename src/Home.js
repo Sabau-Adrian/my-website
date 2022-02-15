@@ -1,5 +1,5 @@
 import { Box, Button, Container, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -25,6 +25,7 @@ const theme = createTheme({
 
 theme.typography.h3 = {
     fontSize: '2.3rem',
+    color: '#ffffff',
     pl: '5px',
     '@media (min-width:600px)': {
         fontSize: '2.3rem',
@@ -38,6 +39,7 @@ theme.typography.h3 = {
 };
 
 const Home = () => {
+    
     return (
         <ThemeProvider theme={theme}>
             <Container disableGutters maxWidth={false}>
@@ -47,7 +49,9 @@ const Home = () => {
                         display: 'flex',
                         paddingTop: 2,
                         justifyContent: 'center',
-                        backgroundColor: '#3E497A',
+                        
+                        backgroundColor: '#000000',
+                        backgroundImage: 'linear-gradient(147deg, #000000 0%, #434343 74%)',
                         height: '100vh',
 
 
@@ -73,10 +77,10 @@ const Home = () => {
                                 variant='h3'>
                                 Hello, I'm
                             </Typography>
-                            <Typography animate__animated animate__backInDown variant='h3' pl='15px' color="#F1D00A">Adrian</Typography>
+                            <Typography variant='h3' pl='15px' color="#F1D00A">Adrian</Typography>
                         </Box>
-                        <p>
-                            I'm a {' '}<Typical
+                        <p className='pColor'>
+                            I'm a {' '}<Typical 
                                 steps={['Front-End Developer 💻', 1000,
                                     'React Enthusiast 😎', 1000,
                                     'Css & HTML Wizard 🧙‍♂️', 1000,

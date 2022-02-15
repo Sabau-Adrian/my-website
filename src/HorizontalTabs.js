@@ -14,7 +14,9 @@ import HistoryIcon from '@mui/icons-material/History';
 import InterestsIcon from '@mui/icons-material/Interests';
 import ProgrammingSkills from './ProgrammingSkills';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-
+import {AiOutlineFundProjectionScreen} from 'react-icons/ai';
+import Projects from './Projects'
+import { typography } from '@mui/system';
 
 
 function TabPanel(props) {
@@ -62,16 +64,18 @@ export default function HorizontalTabs() {
   };
 
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container id="about" disableGutters maxWidth={false}>
     <Box sx={{ width: '100%',
     height:'100vh',
     padding:'0px'}}>
+      <typography> Resume</typography>
       <Box sx={{ padding:'0px', borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab icon={<HistoryIcon/>} label="Work history" {...a11yProps(0)} />
-          <Tab icon={<SchoolIcon/>} label="Education" {...a11yProps(1)} />
-          <Tab icon={<InterestsIcon/>} label="Interests" {...a11yProps(2)} />
-          <Tab icon={<LaptopMacIcon />} label="Programming Skills" {...a11yProps(3)} />
+        <Tabs value={value} onChange={handleChange} aria-label="scrollable auto tabs example" variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile>
+          <Tab sx={{p:'0px', width:'10px'}}icon={<HistoryIcon/>}  {...a11yProps(0)} />
+          <Tab sx={{p:'0px'}} icon={<LaptopMacIcon />} {...a11yProps(1)} />
+          <Tab sx={{p:'0px'}} icon={<AiOutlineFundProjectionScreen  size={25}/>}  {...a11yProps(2)} />
+          <Tab sx={{p:'0px'}} icon={<SchoolIcon/>}  {...a11yProps(3)} />
+          <Tab sx={{p:'0px'}} icon={<InterestsIcon/>} {...a11yProps(4)} />
         </Tabs>
       </Box>
       <SwipeableViews
@@ -82,12 +86,17 @@ export default function HorizontalTabs() {
           <WorkTimeLine />
         </TabPanel>
         <TabPanel sx={{padding:'0px'}} value={value} index={1} dir={theme.direction}>
-          <Education />
+        <ProgrammingSkills />
         </TabPanel>
         <TabPanel  sx={{padding:'0px'}} value={value} index={2} dir={theme.direction}>
+        <Projects />
         </TabPanel>
-        <TabPanel>
-          <ProgrammingSkills />
+        <TabPanel  sx={{padding:'0px'}} value={value} index={3} dir={theme.direction}>
+          
+          <Education />
+        </TabPanel>
+        <TabPanel  sx={{padding:'0px'}} value={value} index={4} dir={theme.direction}>
+          
         </TabPanel>
       </SwipeableViews>
     </Box>

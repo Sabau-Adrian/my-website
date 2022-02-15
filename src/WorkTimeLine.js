@@ -10,8 +10,18 @@ import './About.css';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
+const theme = createTheme({
 
-const theme = createTheme();
+  palette: {
+      primary: {
+          main: "#F0F0F0",
+      },
+      secondary: {
+          main: "#F1D00A",
+      },
+  },
+});
+
 theme.typography.h6 = {
   fontSize: '0.5rem',
   
@@ -67,11 +77,11 @@ function WorkTimeLine() {
             height:'80vh'
         }}>
         <Box>
-        <Timeline position="alternate">
+        <Timeline className="TimeColors" position="alternate">
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: 'auto 0' }}
-            variant="body2"
+            variant="h6"
             color="text.secondary"
             align="right"
           >
@@ -104,10 +114,10 @@ function WorkTimeLine() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
-            <TimelineDot color="primary">
+            <TimelineDot color="secondary">
               <TrendingUpIcon />
             </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: 'primary.main'}}/>
+            <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h5" component="span">
@@ -128,7 +138,7 @@ function WorkTimeLine() {
             2019-2020
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'primary.main'}}/>
+            <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
             <TimelineDot color="secondary" variant="filled">
               <BusinessCenterIcon />
             </TimelineDot>
@@ -154,7 +164,7 @@ function WorkTimeLine() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-            <TimelineDot color="primary">
+            <TimelineDot color="secondary">
               <LaptopMacIcon />
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: 'primary.main'}}/>

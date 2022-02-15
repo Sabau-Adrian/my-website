@@ -8,6 +8,8 @@ import 'fontsource-roboto';
 import Header from './Header.js';
 import Home from './Home.js';
 import HorizontalTabs from './HorizontalTabs.js';
+import NavBar from './NavBar';
+import About from './About'
 
 
 
@@ -41,10 +43,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container disableGutters maxWidth={false}>
-            <Header />
-            
+            <NavBar />
             <Home />
-            
+            <About />
             <HorizontalTabs />
       </Container>
     </ThemeProvider>
