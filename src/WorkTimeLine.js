@@ -81,94 +81,94 @@ function WorkTimeLine() {
   
     return(
       
-      
-      <ThemeProvider theme={theme}>
-        <Container disableGutters maxWidth={false}
+
+    <ThemeProvider theme={theme}>
+      <Container disableGutters maxWidth={false}
         sx={{
-            display:'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            height:'80vh'
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          height: '80vh'
         }}>
-         <Typography align='center' variant='h3'>Work History</Typography> 
+        <Typography align='center' variant='h3'>Work History</Typography>
         <Box>
-        <Timeline className="TimeColors" position="alternate">
-        <TimelineItem>
-        <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
-            align="right"
-            variant="h6"
-            color="text.secondary"
-          >
-            2021-2022
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-            <TimelineDot color="secondary">
-              <LaptopMacIcon />
-            </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: 'primary.main'}}/>
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5" component="span">
-              Web Developer at Scoala Informala (course)
-            </Typography>
-            <Typography variant="h6">Programming laguages:JavaScript</Typography>
-            <Typography variant="h6">Libraries/Framework:React.js,Node.js</Typography>
-            <Typography variant="h6">HTML/CSS</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-        <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
-            align="right"
-            variant="h6"
-            color="text.secondary"
-          >
-            2019-2020
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
-            <TimelineDot color="secondary" variant="filled">
-              <BusinessCenterIcon />
-            </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5" component="span">
-              Salesperson at RMC Suport Motors
-            </Typography>
-            <Typography variant="h6">Time management</Typography>
-            <Typography variant="h6">Client Engagement</Typography>
-            <Typography variant="h6">Active Listening</Typography>
-          </TimelineContent>
-        </TimelineItem>
-                <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: 'auto 0' }}
-                  variant="h6"
-                  color="text.secondary"
-                  align="right"
-                >
-                  2017-2019
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
-                  <TimelineDot color="secondary">
-                    <TrendingUpIcon />
-                  </TimelineDot>
-                  <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                  <Typography variant="h5" component="span">
+          <Timeline className="TimeColors" position="alternate">
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="h6"
+                color="text.secondary"
+              >
+                2021-2022
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                <TimelineDot color="secondary">
+                  <LaptopMacIcon />
+                </TimelineDot>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <Typography variant="h5" component="span">
+                  Web Developer at Scoala Informala (course)
+                </Typography>
+                <Typography variant="h6">Programming laguages: JavaScript</Typography>
+                <Typography variant="h6">Libraries/Framework:React.js, Node.js</Typography>
+                <Typography variant="h6">HTML/CSS</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                align="right"
+                variant="h6"
+                color="text.secondary"
+              >
+                2019-2020
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                <TimelineDot color="secondary" variant="filled">
+                  <BusinessCenterIcon />
+                </TimelineDot>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <Typography variant="h5" component="span">
+                  Salesperson at RMC Suport Motors
+                </Typography>
+                <Typography variant="h6">Time management</Typography>
+                <Typography variant="h6">Client Engagement</Typography>
+                <Typography variant="h6">Active Listening</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: 'auto 0' }}
+                variant="h6"
+                color="text.secondary"
+                align="right"
+              >
+                2017-2019
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                <TimelineDot color="secondary">
+                  <TrendingUpIcon />
+                </TimelineDot>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <Typography variant="h5" component="span">
                   E commerce product manager at EuroArtDeco
-                  </Typography>
-                  <Typography variant="h6">Photo shooting/editing (PhotoShop)</Typography>
-                  <Typography variant="h6">Customer service</Typography>
-                  <Typography variant="h6">Problem-solving</Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
+                </Typography>
+                <Typography variant="h6">Photo shooting/editing (PhotoShop)</Typography>
+                <Typography variant="h6">Customer service</Typography>
+                <Typography variant="h6">Problem-solving</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
               <TimelineOppositeContent
                 sx={{ m: 'auto 0' }}
                 variant="h6"
@@ -178,11 +178,11 @@ function WorkTimeLine() {
                 2014-2017
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                 <TimelineDot color="secondary">
                   <FastfoodIcon />
                 </TimelineDot>
-                <TimelineConnector sx={{ bgcolor: 'secondary.main'}}/>
+                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <Typography variant="h5" component="span">
@@ -193,11 +193,11 @@ function WorkTimeLine() {
                 <Typography variant="h6">Effective communication</Typography>
               </TimelineContent>
             </TimelineItem>
-      </Timeline>
-      </Box>
+          </Timeline>
+        </Box>
       </Container>
-      </ThemeProvider>
-    );
+    </ThemeProvider>
+  );
 }
  
         
