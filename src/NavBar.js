@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavbarBrand, NavLink } from 'react-bootstrap';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+import { Container, Nav, Navbar, NavbarBrand, NavLink} from 'react-bootstrap';
+
 
 
 
@@ -10,15 +9,15 @@ const NavBar = () => {
         <Navbar collapseOnSelect expand="lg" bg='dark' variant='dark'>
             <Container>
                 <NavbarBrand href='#home'>Sabau Adrian</NavbarBrand>
-                <NavbarToggle aria-controls='responsive-navbar-nav'/>
-                <NavbarCollapse id="responsive-navbar-nav">
+                <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+                <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='me-auto'>
                         <NavLink href='./Home.js'>Home</NavLink>
                         <NavLink href='#about'>About Me</NavLink>
                         <NavLink href='#resume'>Resume</NavLink>
                         <NavLink href='#contact'>Contact</NavLink>
                     </Nav>
-                </NavbarCollapse>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )
