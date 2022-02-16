@@ -1,4 +1,24 @@
-.star {
-    width: 5px;
-    color: red;
+@media screen and (max-width: 600px){
+    .header{
+        font-size: 50px;
+        color: blue;
+       }  
+      
+}
+@media screen and (min-width: 600px){
+    .header{
+        font-size: 100px;
+       }  
+} 
+    
+
+@media screen and (min-width:768px){
+    .header{
+        font-size: 100px;
+       }  
+}
+@media screen and (min-width: 992px){
+    .header{
+        font-size: 100px;
+       }  
 }

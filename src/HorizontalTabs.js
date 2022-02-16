@@ -15,8 +15,36 @@ import InterestsIcon from '@mui/icons-material/Interests';
 import ProgrammingSkills from './ProgrammingSkills';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai';
-import Projects from './Projects'
-import { typography } from '@mui/system';
+import Projects from './Projects';
+import Divider from '@mui/material/Divider';
+import { ThemeProvider, createTheme,} from '@mui/material/styles';
+import './HorizontalTabs.css';
+
+const theme = createTheme({
+
+  palette: {
+      primary: {
+          main: "#F0F0F0",
+      },
+      secondary: {
+          main: "#F1D00A",
+      },
+  },
+  components: {
+    // Name of the component
+    TabScrollButton: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          color:'#F1D00A',
+          fontSize: '100px'
+        },
+      },
+    },
+  },
+});
+
 
 
 function TabPanel(props) {
@@ -64,18 +92,21 @@ export default function HorizontalTabs() {
   };
 
   return (
+    <ThemeProvider theme={theme}>
     <Container id="about" disableGutters maxWidth={false}>
     <Box sx={{ width: '100%',
     height:'100vh',
-    padding:'0px'}}>
-      <typography> Resume</typography>
-      <Box sx={{ padding:'0px', borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="scrollable auto tabs example" variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile>
-          <Tab sx={{p:'0px', width:'10px'}}icon={<HistoryIcon/>}  {...a11yProps(0)} />
-          <Tab sx={{p:'0px'}} icon={<LaptopMacIcon />} {...a11yProps(1)} />
-          <Tab sx={{p:'0px'}} icon={<AiOutlineFundProjectionScreen  size={25}/>}  {...a11yProps(2)} />
-          <Tab sx={{p:'0px'}} icon={<SchoolIcon/>}  {...a11yProps(3)} />
-          <Tab sx={{p:'0px'}} icon={<InterestsIcon/>} {...a11yProps(4)} />
+    padding:'0px',
+    }}>
+      <Typography align='center' variant='h1'>Resume</Typography>
+      <Divider variant="middle" ><Typography variant='h5'>My Bio Details</Typography></Divider>
+      <Box sx={{ padding:'0px', borderBottom: 1, borderColor: 'divider'}}>
+        <Tabs sx={{pb:'px'}} value={value} onChange={handleChange} aria-label="scrollable auto tabs example" variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile indicatorColor="primary">
+          <Tab sx={{p:'0px', width:'10px', color:'#000000'}}icon={<HistoryIcon/>}  {...a11yProps(0)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<LaptopMacIcon />} {...a11yProps(1)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<AiOutlineFundProjectionScreen  size={25}/>}  {...a11yProps(2)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<SchoolIcon/>}  {...a11yProps(3)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<InterestsIcon/>} {...a11yProps(4)} />
         </Tabs>
       </Box>
       <SwipeableViews
@@ -92,7 +123,6 @@ export default function HorizontalTabs() {
         <Projects />
         </TabPanel>
         <TabPanel  sx={{padding:'0px'}} value={value} index={3} dir={theme.direction}>
-          
           <Education />
         </TabPanel>
         <TabPanel  sx={{padding:'0px'}} value={value} index={4} dir={theme.direction}>
@@ -101,5 +131,6 @@ export default function HorizontalTabs() {
       </SwipeableViews>
     </Box>
     </Container>
+    </ThemeProvider>
   );
 }

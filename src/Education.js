@@ -3,6 +3,8 @@ import { Box} from "@mui/system";
 import React from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+
+
 const theme = createTheme();
 
 theme.typography.h6 = {
@@ -58,11 +60,25 @@ theme.typography.h6 = {
     },
   };
 
+  theme.typography.h3 = {
+    fontSize: '1.5rem',
+    paddingTop:'30px',
+    '@media (min-width:600px)': {
+        fontSize: '1.7rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '2rem'
+    },
+    [theme.breakpoints.up('lg')]: {
+        fontSize: '2.3rem',
+    },
+ };
+
 function Education() {
     return(
         <ThemeProvider theme={theme}>
             <Container disableGutters maxWidth={false}>
-            
+            <Typography align='center' variant='h3'>Education</Typography>
             <Box  sx={{
                 display:'flex',
                 flexDirection:'column',

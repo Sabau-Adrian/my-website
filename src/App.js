@@ -9,7 +9,8 @@ import Header from './Header.js';
 import Home from './Home.js';
 import HorizontalTabs from './HorizontalTabs.js';
 import NavBar from './NavBar';
-import About from './About'
+import About from './About';
+import ContactUs from './ContactUs'
 
 
 
@@ -31,10 +32,10 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: purple[500],
+      main: '#F1D00A',
     },
     secondary: {
-      main: green[500],
+      main: '#F1D00A',
     },
   },
 });
@@ -47,6 +48,7 @@ function App() {
             <Home />
             <About />
             <HorizontalTabs />
+            <ContactUs />
       </Container>
     </ThemeProvider>
   );

@@ -112,7 +112,7 @@ const Home = () => {
                             justifyContent: 'flex-start'
 
                         }}>
-                        <img alt='Personal-img' src={profileImg}></img>
+                        <img className='homeImg' alt='Personal-img' src={profileImg}></img>
                     </Box>
                 </Box>
             </Container>

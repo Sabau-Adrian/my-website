@@ -9,7 +9,7 @@
     .img-container{
         width: 30vw;
     }
-    img{
+    .homeImg{
         height: 180px;
         padding-right: 10px;
     }
@@ -28,7 +28,7 @@
         justify-content: center;
     }
     
-    img{
+    .homeImg{
         padding-top: 10px;
         height: 150px;
     }
@@ -48,12 +48,12 @@
     p{
         font-size: 30px;
     }
-    img{
+    .homeImg{
         height: 250px;
     }
 }
 @media screen and (min-width: 992px){
-   img{
+    .homeImg{
     height: 350px; 
    } 
 }
