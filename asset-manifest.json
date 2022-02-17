@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6bea40f.css",
-    "main.js": "/static/js/main.3e9cef64.js",
+    "main.css": "/static/css/main.1a497221.css",
+    "main.js": "/static/js/main.3bfc2035.js",
     "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
     "static/media/MovieList.jpg": "/static/media/MovieList.b2ccb6897c543fa6617e.jpg",
     "static/media/Linkedin.png": "/static/media/Linkedin.1b2a446586de178a7840.png",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.b5a0a0df312d3423493b.woff",
-    "static/media/Profile.jpeg": "/static/media/Profile.a0acbab8009db583a492.jpeg",
     "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-cyrillic-ext-400-normal.woff2": "/static/media/roboto-cyrillic-ext-400-normal.dd55ea0a2e90d5d86e15.woff2",
     "static/media/roboto-latin-ext-400-normal.woff2": "/static/media/roboto-latin-ext-400-normal.dcc07bcfcd475f34f20b.woff2",
@@ -15,12 +14,12 @@
     "static/media/roboto-vietnamese-400-normal.woff2": "/static/media/roboto-vietnamese-400-normal.52cebac009baf5592e7d.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.bc7ace6e50c7d9d4d959.woff2",
     "index.html": "/index.html",
-    "main.a6bea40f.css.map": "/static/css/main.a6bea40f.css.map",
-    "main.3e9cef64.js.map": "/static/js/main.3e9cef64.js.map",
+    "main.1a497221.css.map": "/static/css/main.1a497221.css.map",
+    "main.3bfc2035.js.map": "/static/js/main.3bfc2035.js.map",
     "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6bea40f.css",
-    "static/js/main.3e9cef64.js"
+    "static/css/main.1a497221.css",
+    "static/js/main.3bfc2035.js"
   ]
 }
