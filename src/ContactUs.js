@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Divider, Paper, Typography } from '@mui/material';
+import { Box, Divider, Paper, Typography } from '@mui/material';
 import { Button, Container, Form } from 'react-bootstrap';
 
 
@@ -23,8 +23,10 @@ export const ContactUs = () => {
       
         
       <Container>
+        <Box sx={{display:'block', pt:'30px'}}>
         <Typography align='center' variant='h1'>Contact</Typography>
         <Divider variant="middle" ><Typography variant='h5'>Lets keep in touch</Typography></Divider>
+       <Paper elevation={3} sx={{marginTop:'30px', p: 3, m: 5,}}>
       <Form ref={form} onSubmit={sendEmail}>
         <Form.Group>
           <Form.Label>Name</Form.Label>
@@ -44,8 +46,9 @@ export const ContactUs = () => {
         <Button variant="primary" type="submit">
           Send
         </Button>
-
       </Form>
+      </Paper>
+      </Box> 
       </Container>
     );
   };

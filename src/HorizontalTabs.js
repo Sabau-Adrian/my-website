@@ -95,7 +95,7 @@ export default function HorizontalTabs() {
     <ThemeProvider theme={theme}>
     <Container id="about" disableGutters maxWidth={false}>
     <Box sx={{ width: '100%',
-    height:'100vh',
+    
     padding:'0px',
     }}>
       <Typography align='center' variant='h1'>Resume</Typography>
