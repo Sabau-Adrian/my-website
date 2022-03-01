@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0cc593c8.css",
-    "main.js": "/static/js/main.8359f9b1.js",
+    "main.css": "/static/css/main.d2170cc5.css",
+    "main.js": "/static/js/main.6a4dfcea.js",
     "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
     "static/media/MovieList.jpg": "/static/media/MovieList.b2ccb6897c543fa6617e.jpg",
     "static/media/SabauAdrianResume varianta 2.pdf": "/static/media/SabauAdrianResume varianta 2.bf452bf67d72bf32561a.pdf",
@@ -16,12 +16,12 @@
     "static/media/roboto-vietnamese-400-normal.woff2": "/static/media/roboto-vietnamese-400-normal.52cebac009baf5592e7d.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.bc7ace6e50c7d9d4d959.woff2",
     "index.html": "/index.html",
-    "main.0cc593c8.css.map": "/static/css/main.0cc593c8.css.map",
-    "main.8359f9b1.js.map": "/static/js/main.8359f9b1.js.map",
+    "main.d2170cc5.css.map": "/static/css/main.d2170cc5.css.map",
+    "main.6a4dfcea.js.map": "/static/js/main.6a4dfcea.js.map",
     "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cc593c8.css",
-    "static/js/main.8359f9b1.js"
+    "static/css/main.d2170cc5.css",
+    "static/js/main.6a4dfcea.js"
   ]
 }
