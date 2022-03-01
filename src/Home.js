@@ -42,7 +42,7 @@ const Home = () => {
     
     return (
         <ThemeProvider theme={theme}>
-            <Container disableGutters maxWidth={false}>
+            <Container id="home" disableGutters maxWidth={false}>
                 <Box
                     className="box-container"
                     sx={{

@@ -93,7 +93,7 @@ export default function HorizontalTabs() {
 
   return (
     <ThemeProvider theme={theme}>
-    <Container id="about" disableGutters maxWidth={false}>
+    <Container id="resume"  disableGutters maxWidth={false}>
     <Box sx={{ width: '100%',
     
     padding:'0px',

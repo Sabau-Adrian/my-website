@@ -22,7 +22,7 @@ export const ContactUs = () => {
     return (
       
         
-      <Container>
+      <Container id="contact">
         <Box sx={{display:'block', pt:'30px'}}>
         <Typography align='center' variant='h1'>Contact</Typography>
         <Divider variant="middle" ><Typography variant='h5'>Lets keep in touch</Typography></Divider>

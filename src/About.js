@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const About = () => {
     const classes = useStyles();
     return(
-        <Container className="aboutContainer"  disableGutters maxWidth={false}>
+        <Container id="about" className="aboutContainer"  disableGutters maxWidth={false}>
         <Typography align='center' variant='h1'>About Me</Typography>
         <Divider ><Typography variant='h5'>Why choose me?</Typography></Divider>           
         <Paper className={classes.yellowPaper}sx={{marginTop:'30px', p: 3,}} elevation="3">
