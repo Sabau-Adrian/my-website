@@ -98,7 +98,7 @@ function WorkTimeLine() {
                 sx={{ m: 'auto 0' }}
                 align="right"
                 variant="h6"
-                color="text.secondary"
+                color="black"
               >
                 2021-2022
               </TimelineOppositeContent>
@@ -113,8 +113,8 @@ function WorkTimeLine() {
                 <Typography variant="h5" component="span">
                   Web Developer at Scoala Informala (course)
                 </Typography>
-                <Typography variant="h6">Programming laguages: JavaScript</Typography>
                 <Typography variant="h6">Libraries/Framework:React.js, Node.js</Typography>
+                <Typography variant="h6">Programming laguages: JavaScript</Typography>
                 <Typography variant="h6">HTML/CSS</Typography>
               </TimelineContent>
             </TimelineItem>
@@ -123,7 +123,7 @@ function WorkTimeLine() {
                 sx={{ m: 'auto 0' }}
                 align="right"
                 variant="h6"
-                color="text.secondary"
+                color="black"
               >
                 2019-2020
               </TimelineOppositeContent>
@@ -138,8 +138,8 @@ function WorkTimeLine() {
                 <Typography variant="h5" component="span">
                   Salesperson at RMC Suport Motors
                 </Typography>
-                <Typography variant="h6">Time management</Typography>
                 <Typography variant="h6">Client Engagement</Typography>
+                <Typography variant="h6">Time management</Typography>
                 <Typography variant="h6">Active Listening</Typography>
               </TimelineContent>
             </TimelineItem>
@@ -147,7 +147,7 @@ function WorkTimeLine() {
               <TimelineOppositeContent
                 sx={{ m: 'auto 0' }}
                 variant="h6"
-                color="text.secondary"
+                color="black"
                 align="right"
               >
                 2017-2019
@@ -172,7 +172,7 @@ function WorkTimeLine() {
               <TimelineOppositeContent
                 sx={{ m: 'auto 0' }}
                 variant="h6"
-                color="text.secondary"
+                color="black"
                 align="right"
               >
                 2014-2017
@@ -188,9 +188,9 @@ function WorkTimeLine() {
                 <Typography variant="h5" component="span">
                   Waiter/Bartender at Motel Gilau
                 </Typography>
+                <Typography variant="h6">Effective communication</Typography>
                 <Typography variant="h6">Customer Service</Typography>
                 <Typography variant="h6">Teamwork</Typography>
-                <Typography variant="h6">Effective communication</Typography>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

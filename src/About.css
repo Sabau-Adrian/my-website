@@ -2,3 +2,11 @@
     margin-bottom: 30px;
     margin-top: 30px;
   }
+
+ .boxContainer {
+   display:flex;
+   justify-content: center;
+ }
+ .leftButton{
+   margin-right: 10px;
+ }

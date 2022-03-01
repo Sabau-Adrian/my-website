@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Box, Divider, Paper, Typography } from '@mui/material';
 import { Button, Container, Form } from 'react-bootstrap';
-
+import './ContactUs.css'
 
 export const ContactUs = () => {
     const form = useRef();
@@ -28,24 +28,25 @@ export const ContactUs = () => {
         <Divider variant="middle" ><Typography variant='h5'>Lets keep in touch</Typography></Divider>
        <Paper elevation={3} sx={{marginTop:'30px', p: 3, m: 5,}}>
       <Form ref={form} onSubmit={sendEmail}>
-        <Form.Group>
+        <Form.Group className="FormElement">
           <Form.Label>Name</Form.Label>
       <Form.Control type="text" placeholder="Enter name" name="name"/>
         </Form.Group>
-        <Form.Group>
+        <Form.Group className="FormElement">
           <Form.Label>Email address</Form.Label>
       <Form.Control type="email" placeholder="Enter email" name="email"/>
       <Form.Text className="text-muted">
-        We'll never share your email with anyone else.
       </Form.Text>
         </Form.Group>
-        <Form.Group>
-        <Form.Label>Example textarea</Form.Label>
+        <Form.Group className="FormElement">
+        <Form.Label>Message</Form.Label>
         <Form.Control as="textarea" rows={3} name="message" />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Box className="buttonContainer">
+        <Button className="contactButton" variant="dark" type="submit">
           Send
         </Button>
+        </Box>
       </Form>
       </Paper>
       </Box> 

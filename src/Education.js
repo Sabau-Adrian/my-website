@@ -1,7 +1,9 @@
-import { Container, Typography } from "@mui/material";
+import { Container, Paper, Typography } from "@mui/material";
 import { Box} from "@mui/system";
 import React from "react";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import './Education.css'
 
 
 
@@ -63,6 +65,7 @@ theme.typography.h6 = {
   theme.typography.h3 = {
     fontSize: '1.5rem',
     paddingTop:'30px',
+    paddingBottom:'30px',
     '@media (min-width:600px)': {
         fontSize: '1.7rem',
     },
@@ -75,39 +78,30 @@ theme.typography.h6 = {
  };
 
 function Education() {
-    return(
+    return( 
         <ThemeProvider theme={theme}>
-            <Container disableGutters maxWidth={false}>
+            <Container className="educationContainer">
+            <Paper className="paperContainer" sx={{marginTop:'30px', p: 3,}} elevation="3">
             <Typography align='center' variant='h3'>Education</Typography>
-            <Box  sx={{
-                display:'flex',
-                flexDirection:'column',
-                justifyContent:'space-around',
-                backgroundColor:'#F0F0F0',
-                borderRadius: '5px',
-                alignItems:'center',
-                textAlign:'center',
-                height: '80vh',
-                padding:'0px'
-                
-            }}>
-            <Box>
+            
+            <Box className="textBox">
                 <Typography variant="h4">"George Baritiu" National College</Typography>
-                <Typography variant="h6" color='#3E497A'>2010-2014</Typography>
-                <Typography variant="h5">Highschool Diploma</Typography>
+                <Typography variant="h4">Highschool Diploma</Typography>
+                <Typography variant="h4">2010-2014</Typography>
             </Box>
-            <Box>
+            <Box className="textBox">
                 <Typography variant="h4">University of Agricultural Sciences and Veterinary Medicine</Typography>
-                <Typography variant="h6" color='#3E497A'>2014-2018</Typography>
-                <Typography variant="h5">Bachelor in Economics Engineering</Typography>
+                <Typography variant="h4">Bachelor in Economics Engineering</Typography>
+                <Typography variant="h4">2014-2018</Typography>
             </Box>
-            <Box>
+            <Box className="textBox">
                 <Typography variant="h4">Front-end Development course at "Scoala Informala"</Typography>
-                <Typography variant="h6" color='#3E497A'>2021-2022</Typography>
-                <Typography variant="h5">Front-End Developer</Typography>
+                <Typography variant="h4">Front-End Developer</Typography>
+                <Typography variant="h4">2021-2022</Typography>
             </Box>
-            </Box>
+            </Paper>
             </Container>
+            
         </ThemeProvider>
         
     );

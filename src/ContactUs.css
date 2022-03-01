@@ -1,0 +1,10 @@
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+.contactButton {
+    margin-top: 20px;
+}
+.FormElement{
+    margin-bottom: 15px;
+}

@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
 
 import './ProgrammingSkills.css';
-
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';

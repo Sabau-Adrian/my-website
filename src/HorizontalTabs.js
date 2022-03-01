@@ -17,33 +17,10 @@ import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import {AiOutlineFundProjectionScreen} from 'react-icons/ai';
 import Projects from './Projects';
 import Divider from '@mui/material/Divider';
-import { ThemeProvider, createTheme,} from '@mui/material/styles';
+import { ThemeProvider} from '@mui/material/styles';
 import './HorizontalTabs.css';
 
-const theme = createTheme({
 
-  palette: {
-      primary: {
-          main: "#F0F0F0",
-      },
-      secondary: {
-          main: "#F1D00A",
-      },
-  },
-  components: {
-    // Name of the component
-    TabScrollButton: {
-      styleOverrides: {
-        // Name of the slot
-        root: {
-          // Some CSS
-          color:'#F1D00A',
-          fontSize: '100px'
-        },
-      },
-    },
-  },
-});
 
 
 

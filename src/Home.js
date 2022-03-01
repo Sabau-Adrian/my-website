@@ -1,5 +1,4 @@
 import { Box, Button, Container, Typography } from "@mui/material";
-import React, { useState } from "react";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -8,7 +7,8 @@ import Typical from 'react-typical';
 import profileImg from '../src/images/Linkedin.png';
 import './Home.css';
 import { ThemeProvider, createTheme,} from '@mui/material/styles';
-import 'animate.css'
+import 'animate.css';
+
 
 
 const theme = createTheme({
@@ -83,7 +83,7 @@ const Home = () => {
                             I'm a {' '}<Typical 
                                 steps={['Front-End Developer 💻', 1000,
                                     'React Enthusiast 😎', 1000,
-                                    'Css & HTML Wizard 🧙‍♂️', 1000,
+                                    'Css & HTML Passionate 😊', 1000,
                                 ]}
                                 loop={Infinity}
                                 wrapper="b" />
@@ -102,7 +102,6 @@ const Home = () => {
                                 <GitHubIcon />
                             </Button>
                         </Box>
-
                     </Box>
                     <Box
                         className="img-container"

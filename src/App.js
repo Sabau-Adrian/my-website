@@ -3,9 +3,7 @@ import './App.css';
 import {  Container} from '@mui/material';
 // import styled from "styled-components"
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { green, purple } from '@mui/material/colors';
 import 'fontsource-roboto';
-import Header from './Header.js';
 import Home from './Home.js';
 import HorizontalTabs from './HorizontalTabs.js';
 import NavBar from './NavBar';
