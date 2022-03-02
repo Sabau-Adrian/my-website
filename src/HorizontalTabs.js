@@ -19,6 +19,7 @@ import Projects from './Projects';
 import Divider from '@mui/material/Divider';
 import { ThemeProvider} from '@mui/material/styles';
 import './HorizontalTabs.css';
+import Interests from './Interests';
 
 
 
@@ -79,11 +80,11 @@ export default function HorizontalTabs() {
       <Divider variant="middle" ><Typography variant='h5'>My Bio Details</Typography></Divider>
       <Box sx={{ padding:'0px', borderBottom: 1, borderColor: 'divider'}}>
         <Tabs sx={{pb:'px'}} value={value} onChange={handleChange} aria-label="scrollable auto tabs example" variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile indicatorColor="primary">
-          <Tab sx={{p:'0px', width:'10px', color:'#000000'}}icon={<HistoryIcon/>}  {...a11yProps(0)} />
-          <Tab sx={{p:'0px', color:'#000000'}} icon={<LaptopMacIcon />} {...a11yProps(1)} />
-          <Tab sx={{p:'0px', color:'#000000'}} icon={<AiOutlineFundProjectionScreen  size={25}/>}  {...a11yProps(2)} />
-          <Tab sx={{p:'0px', color:'#000000'}} icon={<SchoolIcon/>}  {...a11yProps(3)} />
-          <Tab sx={{p:'0px', color:'#000000'}} icon={<InterestsIcon/>} {...a11yProps(4)} />
+          <Tab sx={{p:'0px', width:'10px', color:'#000000'}}icon={<HistoryIcon/>}label="Experience"  {...a11yProps(0)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<LaptopMacIcon />} label="Skills" {...a11yProps(1)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<AiOutlineFundProjectionScreen  size={25}/>} label="Projects" {...a11yProps(2)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<SchoolIcon/>} label="Education" {...a11yProps(3)} />
+          <Tab sx={{p:'0px', color:'#000000'}} icon={<InterestsIcon/>}label="Interests" {...a11yProps(4)} />
         </Tabs>
       </Box>
       <SwipeableViews
@@ -103,7 +104,7 @@ export default function HorizontalTabs() {
           <Education />
         </TabPanel>
         <TabPanel  sx={{padding:'0px'}} value={value} index={4} dir={theme.direction}>
-          
+          <Interests />
         </TabPanel>
       </SwipeableViews>
     </Box>

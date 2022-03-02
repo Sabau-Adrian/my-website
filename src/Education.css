@@ -1,14 +1,28 @@
 
 .textBox{
-    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
-.paperContainer {
-    
-    
 
-    background-color: #fdb813;
-background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
-    
-
+.educationLogo{
+     
+     display:flex;
+     align-items: center;
 }
+.textContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px;
+}
+.Logo{
+    height: 120px;
+}
+@media only screen and (max-width: 600px) {
+    .Logo{
+        height: 60px;
+    }
+}; 

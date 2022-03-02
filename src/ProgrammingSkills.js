@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { ProgressBar } from 'react-bootstrap';
 import {FaReact,FaBootstrap,FaCss3Alt,FaHtml5,FaGithub} from 'react-icons/fa'
 import {SiJavascript} from 'react-icons/si'
-import { Box, Typography } from '@mui/material';
+import { Box} from '@mui/material';
 import { ThemeProvider, createTheme,} from '@mui/material/styles';
 
 const theme = createTheme({
@@ -42,7 +42,6 @@ const ProgrammingSkills = () =>  {
          <ThemeProvider theme={theme} >
             <Container disableGutters maxWidth={false}>
                <Box>
-               <Typography variant='h3' align='center'>Programming Skills</Typography>
                <Row>
                   <Col className='pb-3 pt-4'><FaCss3Alt size={42} /> CSS<ProgressBar  animated now={70} /></Col>
                </Row>

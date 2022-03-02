@@ -1,5 +1,3 @@
-
-import { Typography } from '@mui/material';
 import React from 'react';
 import { Button, Card, Row, Col, Container } from 'react-bootstrap';
 import MovieList from '../src/images/MovieList.jpg';
@@ -37,7 +35,6 @@ const Projects = () => {
     return(
         <ThemeProvider theme={theme}>
         <Container>
-            <Typography align='center' variant='h3'>Projects</Typography>
             <Row xs={1} md={3} className='d-flex flex-row w-100'>
                 <Col className='d-flex justify-content-center' >
                     <Card  style={{width: '20rem'}}>
